@@ -1,0 +1,223 @@
+/* Styling for big-shot elements for manisha */
+
+:root {
+    --header-color: #e4e1e1af;
+    --header-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4b525e;
+    font-family: "Comfortaa", cursive;
+}
+
+/* Custom minimal scrollbar for manisha */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(4, 4, 4, 0.256);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(218, 218, 218, 0.47);
+    border-radius: 10px;
+}
+
+/* Header Styling for manisha */
+
+.heading {
+    color: rgba(255, 255, 255, 0.758);
+    text-align: left;
+    margin-top: 50px;
+    font-family: "Comfortaa", cursive;
+    font-size: 1.2em;
+}
+
+header {
+    background-color: rgba(130, 136, 163, 0.5);
+    color: rgba(255, 255, 255, 0.758);
+    text-align: right;
+    padding-right: 10px;
+    font-size: 20px;
+    user-select: none;
+    padding: 0% 5%;
+    height: var(--header-height);
+}
+
+.h-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.h-direction {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.h-left .h-title {
+    margin-left: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    user-select: none;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.h-title a {
+    text-decoration: none;
+    color: #dadadad7;
+}
+
+/* Search bor styling for manisha */
+.search-bar {
+    width: 100%;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: rgba(225, 225, 225, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 10px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 5px;
+    font-family: "Lexend Deca", sans-serif;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 0.8em;
+}
+
+::placeholder {
+    color: #ffffffc7;
+    font-family: "Comfortaa";
+    opacity: 0.6;
+}
+
+.search-bar button img {
+    width: 20px;
+}
+
+.search-bar button {
+    width: 25px;
+    padding-right: 10px;
+    padding-top: 5px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Genres menu styling for manishaaw */
+
+.genres {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    padding: 2em 0px 0px 5%;
+    background-color: #ffffff11;
+    overflow-y: scroll;
+}
+
+.generes-h {
+    font-family: "Legend Dexa", cursive;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.758);
+    margin-bottom: 1em;
+    user-select: none;
+}
+
+.genres ul li a {
+    color: rgba(245, 245, 245, 0.625);
+    transition: ease-out 200ms;
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.genres ul li:hover a {
+    color: rgba(176, 210, 221, 0.963);
+    padding-left: 10px;
+}
+
+.genres ul li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff0e;
+    border-radius: 20px;
+    height: 45px;
+    transition-duration: 400ms;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.generes ul li.selected-genere {
+    background-color: rgba(176, 210, 221, 0.963);
+}
+
+/* Wallpaper menu styling for mainsha */
+
+.main {
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+}
+
+.genres ul {
+    list-style: none;
+    margin-right: 2em;
+}
+
+.genres h2 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* manisha the astronaut */
+
+.display {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.astronaut {
+    position: absolute;
+    width: 300px;
+    opacity: 0.3;
+    filter: grayscale(1);
+}
+
+.astronaut img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        transform: rotate(360deg);
+    }
+}
