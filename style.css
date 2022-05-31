@@ -80,6 +80,7 @@ header {
 }
 
 /* Search bor styling for manisha */
+
 .search-bar {
     width: 100%;
     font-family: "Lexend Deca", sans-serif;
@@ -206,13 +207,13 @@ header {
     position: absolute;
     width: 300px;
     opacity: 0.3;
-    filter: grayscale(1);
 }
 
 .astronaut img {
     width: 100%;
     height: auto;
     user-select: none;
+    filter: grayscale(1);
     animation: mymove 10s infinite;
 }
 
